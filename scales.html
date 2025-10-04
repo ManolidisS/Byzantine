@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <!--Hey there, dis an Easter egg :D-->
+    <meta name="keywords" content="Spyridon, Manolidis, Spyros, ManolidisS, Maths, Mathematics, Physics, Altruism, Byzantine, Music, Byzantine Music, Scale, Byzantine Music Scale, Notes, Byzantine Music Notes">
+    <meta name="author" content="Spyridon Manolidis">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="oC3JS9ZOQpwrnnspxuti9Jk9VFxgxhlqKCx3EIRJO8U"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #000000;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%2310122f' points='800 100 0 200 0 800 1600 800 1600 200'/%3E%3Cpolygon fill='%2321255e' points='800 200 0 400 0 800 1600 800 1600 400'/%3E%3Cpolygon fill='%2331378d' points='800 300 0 600 0 800 1600 800 1600 600'/%3E%3Cpolygon fill='%234149bc' points='1600 800 800 400 0 800'/%3E%3Cpolygon fill='%237076cd' points='1280 800 800 500 320 800'/%3E%3Cpolygon fill='%239fa3de' points='533.3 800 1066.7 800 800 600'/%3E%3Cpolygon fill='%23CED0EE' points='684.1 800 914.3 800 800 700'/%3E%3C/g%3E%3C/svg%3E");
+            background-attachment: fixed;
+            background-size: cover;
+            /* Free SVG Backgrounds and Patterns by SVGBackgrounds.com; Matt Visiwig */
+            color: white;
+            font-family: Ubuntu;
+            font-weight: 300;
+        } 
+
+        nav {
+        background-color: rgba(0,0,0,0.9);
+        padding: .33rem;
+        border-radius: 1rem;
+        }
+
+        nav ul {
+        list-style: none;
+        display: grid;
+        grid-template-columns: auto 10px auto 10px auto 10px auto 10px 2.2rem;
+        padding-left: .33rem;
+        margin: .2rem;
+        }
+
+        nav ul a {
+        text-align: center;
+        border-width: 3px;
+        border-color: white;
+        border-style: solid;
+        padding: .33rem;
+        text-decoration: none;
+        color: white;
+        border-radius: .33rem;
+        transition: all .33s;
+        }
+
+        nav ul a:hover {
+        border-color: rgba(0, 0, 0, 0);
+        color: black;
+        background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        hr {
+        width: 90%;
+        }
+
+        .currentP {
+        text-decoration: underline;
+        font-style: italic;
+        font-weight: bold;
+        }
+
+        h1 {
+        text-align: center;
+        }
+
+        a {
+        color: inherit;
+        }
+
+        .content p a:hover {
+        background-clip: text;
+        animation: rainbow 1s linear 1;
+        }
+
+        .noBorder {
+        border-style: none;
+        }
+
+        .noMargin {
+        margin: none;
+        }
+
+        .noPadding {
+        padding: none;
+        }
+
+        .titleLine {
+        border-bottom: 3px solid white;
+        width: 75%;
+        margin: 0 auto;
+        }
+
+        .cursive {
+        font-family: Playwrite CU;
+        }
+
+        .colourful {
+        animation: blue 1s infinite linear alternate;
+        }
+
+        .content {
+        background-color: rgba(0,0,0,0.5);
+        padding: 0.001rem 1rem;
+        border-radius: 1rem;
+        width:90%;
+        margin: 0 auto;
+        transition: all .33s;
+        }
+
+        .content:hover {
+        padding: .001rem 2rem;
+        }
+
+        .blog-title {
+        display: flex;
+        justify-content: space-between;
+        }
+
+        .file {
+        background-color: rgba(96,96,96,0.5);
+        padding: .5rem .1rem;
+        border-radius: .5rem;
+        text-align: center;
+        margin: .2rem;
+        transition: background-color .2s, color .2s;
+        }
+
+        .file:hover {
+        background-color: rgba(255,255,255,0.5);
+        color: black;
+        }
+
+        .centre {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+        .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+        }
+
+        .tablic-p {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        }
+
+        .tablic-c {
+        flex: 1;
+        text-align: center;
+        vertical-align: middle;
+        width: 50%;
+        }
+        
+        @keyframes blue {
+        0% {color:rgb(51, 204, 204)}
+        50% {color:rgb(0, 102, 204);}
+        100% {color:rgb(153, 153, 255);}
+        }
+
+        @keyframes rainbow {
+        0% {background-image: linear-gradient(to right, white, red);  color: transparent;}
+        12.5% {background-image: linear-gradient(to right, red , orange);}
+        25% {background-image: linear-gradient(to right, orange , yellow);}
+        37.5% {background-image: linear-gradient(to right, yellow , green);}
+        50% {background-image: linear-gradient(to right, green , blue);}
+        62.5% {background-image: linear-gradient(to right, blue , indigo);}
+        75% {background-image: linear-gradient(to right, indigo , violet);}
+        87.5% {background-image: linear-gradient(to right, violet , red);}
+        93.5% {background-image: linear-gradient(to right, red , white);}
+        100% {background-image: linear-gradient(to right, white , red); color: white;}
+        }
+
+        #announcementDiv {
+        width:100%;
+        background-color: rgba(0,0,0,0.75);
+        }
+
+        #announcementText {
+        margin: 0;
+        padding: 0;
+        }
+
+        #handwritten {
+        stroke-dasharray: 10918;
+        stroke-dashoffset: 10918;
+        animation: write 3s ease;
+        animation-fill-mode: forwards;
+        }
+
+        @keyframes write {
+        to {
+            stroke-dashoffset: 0;
+        }
+        }
+
+        input {
+            width: 5rem;
+            font-size: 1rem;
+            border-radius: 0.25rem;
+        }
+        
+        table {
+            width: 100%;
+            table-layout: auto;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: .25rem;
+        }
+
+        button {
+            margin: auto auto;
+            padding: .5rem 1rem;
+            font-size: 1rem;
+            border-radius: 10%;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/pizzicato@0.6.4/distr/Pizzicato.min.js"></script>
+    <title>Byzantine Music Scales</title>
+    </head>
+    <body>
+        <h1>Byzantine Music Scales</h1>
+        <hr><br>
+        <div class="content">
+            <p>
+                Welcome! This is a small project I started to mainly help myself and other learners get to know and better understand the complex scales of Byzantine Music.
+                <br>
+                You can set your base (note) below, and then you can click the buttons for each note in each scale to hear what it would sound like.
+                Hope this helps!
+            </p>
+        </div>
+        <br>
+        <div class="content" style="overflow: auto;">
+            <h3 style="text-align: center;">Scales</h3>
+            <label for="baseFreq">Base Frequency (Hz): </label>
+            <input type="number" id="baseFreq" value="440">
+            <span id="error" style="color:red;"></span>
+
+            <table>
+                <tr>
+                    <td><p>Diatonic</p></td>
+                    <td><button onclick="playNote('Ni1')">Νη</button></td>
+                    <td><button onclick="playNote('Pa1')">Πα</button></td>
+                    <td><button onclick="playNote('Vu1')">Βου</button></td>
+                    <td><button onclick="playNote('Ga1')">Γα</button></td>
+                    <td><button onclick="playNote('Di1')">Δι</button></td>
+                    <td><button onclick="playNote('Ke1')">Kαι</button></td>
+                    <td><button onclick="playNote('Zo1')">Ζω</button></td>
+                    <td><button onclick="playNote('NI1')">Nη'</button></td>
+                </tr>
+                <tr>
+                    <td><p>Enharmonic</p></td>
+                    <td><button onclick="playNote('Ni2')">Νη</button></td>
+                    <td><button onclick="playNote('Pa2')">Πα</button></td>
+                    <td><button onclick="playNote('Vu2')">Βου</button></td>
+                    <td><button onclick="playNote('Ga2')">Γα</button></td>
+                    <td><button onclick="playNote('Di2')">Δι</button></td>
+                    <td><button onclick="playNote('Ke2')">Και</button></td>
+                    <td><button onclick="playNote('Zo2')">Ζω</button></td>
+                    <td><button onclick="playNote('NI2')">Νη'</button></td>
+                    <td><button onclick="playNote('PA2')">Πα'</button></td>
+                    <td><button onclick="playNote('VU2')">Βου'</button></td>
+                </tr>
+                <tr>
+                    <td><p>Soft Chromatic</p></td>
+                    <td><button onclick="playNote('Ni3')">Νη</button></td>
+                    <td><button onclick="playNote('Pa3')">Πα</button></td>
+                    <td><button onclick="playNote('Vu3')">Βου</button></td>
+                    <td><button onclick="playNote('Ga3')">Γα</button></td>
+                    <td><button onclick="playNote('Di3')">Δι</button></td>
+                    <td><button onclick="playNote('Ke3')">Kαι</button></td>
+                    <td><button onclick="playNote('Zo3')">Ζω</button></td>
+                    <td><button onclick="playNote('NI3')">Nη'</button></td>
+                </tr>
+                <tr>
+                    <td><p>Hard Chromatic</p></td>
+                    <td></td>
+                    <td><button onclick="playNote('Pa4')">Πα</button></td>
+                    <td><button onclick="playNote('Vu4')">Βου</button></td>
+                    <td><button onclick="playNote('Ga4')">Γα</button></td>
+                    <td><button onclick="playNote('Di4')">Δι</button></td>
+                    <td><button onclick="playNote('Ke4')">Και</button></td>
+                    <td><button onclick="playNote('Zo4')">Ζω</button></td>
+                    <td><button onclick="playNote('NI4')">Νη</button></td>
+                    <td><button onclick="playNote('PA4')">Πα'</button></td>
+                </tr>
+            </table>
+            <button onclick="stopNote()" style="margin-top:20px; background:red; color:white; width: 10rem;">Stop</button><br><br>
+            <script>
+                let baseFreq = 440;
+                let currentSound = null;
+
+                document.getElementById("baseFreq").addEventListener("input", function() {
+                    const val = parseFloat(this.value);
+                    if (!val || val <= 0) {
+                        document.getElementById("error").innerText = "Please enter a valid positive frequency.";
+                    } else {
+                        document.getElementById("error").innerText = "";
+                        baseFreq = val;
+                    }
+                });
+
+                const scaleRatios = {
+                    "Ni1": 1,
+                    "Pa1": (2**((10)/(10+8+12+12+10+8+12))),
+                    "Vu1": (2**((10+8)/(10+8+12+12+10+8+12))),
+                    "Ga1": (2**((10+8+12)/(10+8+12+12+10+8+12))),
+                    "Di1": (2**((10+8+12+12)/(10+8+12+12+10+8+12))),
+                    "Ke1": (2**((10+8+12+12+10)/(10+8+12+12+10+8+12))),
+                    "Zo1": (2**((10+8+12+12+10+8)/(10+8+12+12+10+8+12))),
+                    "NI1": 2,
+
+                    "Ni2": 1,
+                    "Pa2": (2**((12)/(12+12+6+12+12+6+12))),
+                    "Vu2": (2**((12+12)/(12+12+6+12+12+6+12))),
+                    "Ga2": (2**((12+12+6)/(12+12+6+12+12+6+12))),
+                    "Di2": (2**((12+12+6+12)/(12+12+6+12+12+6+12))),
+                    "Ke2": (2**((12+12+6+12+12)/(12+12+6+12+12+6+12))),
+                    "Zo2": (2**((12+12+6+12+12+6)/(12+12+6+12+12+6+12))),
+                    "NI2": 2,
+                    "PA2": (2**((12+12+6+12+12+6+12+12)/(12+12+6+12+12+6+12))),
+                    "VU2": (2**((12+12+6+12+12+6+12+12+6)/(12+12+6+12+12+6+12))),
+
+                    "Ni3": 1,
+                    "Pa3": (2**((8)/(8+14+8+12+8+14+8))),
+                    "Vu3": (2**((8+14)/(8+14+8+12+8+14+8))),
+                    "Ga3": (2**((8+14+8)/(8+14+8+12+8+14+8))),
+                    "Di3": (2**((8+14+8+12)/(8+14+8+12+8+14+8))),
+                    "Ke3": (2**((8+14+8+12+8)/(8+14+8+12+8+14+8))),
+                    "Zo3": (2**((8+14+8+12+8+14)/(8+14+8+12+8+14+8))),
+                    "NI3": 2,
+
+                    "Pa4": 1,
+                    "Vu4": (2**((6)/(6+20+4+12+6+20+4))),
+                    "Ga4": (2**((6+20)/(6+20+4+12+6+20+4))),
+                    "Di4": (2**((6+20+4)/(6+20+4+12+6+20+4))),
+                    "Ke4": (2**((6+20+4+12)/(6+20+4+12+6+20+4))),
+                    "Zo4": (2**((6+20+4+12+6)/(6+20+4+12+6+20+4))),
+                    "NI4": (2**((6+20+4+12+6+20)/(6+20+4+12+6+20+4))),
+                    "PA4": 2
+                };
+
+                function playNote(note) {
+                    stopNote(); // Stop any previous note
+                    if (!scaleRatios[note]) {
+                        console.error("Note not defined:", note);
+                        return;
+                    }
+                    const freq = baseFreq * scaleRatios[note];
+                    currentSound = new Pizzicato.Sound({
+                        source: 'wave',
+                        options: { frequency: freq, volume: 0.5 }
+                    });
+                    currentSound.play();
+                }
+
+                function stopNote() {
+                    if (currentSound) {
+                        currentSound.stop();
+                        currentSound = null;
+                    }
+                }
+            </script>
+        </div>
+        <br>
+        <div class="content">
+            <h3 style="text-align: center;">Acknowledgements</h3>
+            <p>
+                The idea of this website is not entirely novel, and there exist other (much older) instances where people have done this online (for example, <a href="http://www.byzantinechant.org/scales.html">this</a>).
+                <br>
+                ChatGPT was used in the making of this (evidently, some parts are vibe-coded).
+                <br>
+                <a href="https://antiochianprodsa.blob.core.windows.net/websiteattachments/BOS%20AH%20BN%20Intro.pdf">This document</a> was used as a reference in the making of this page.
+                <br><br>
+                This is a very early version of the website.
+                I don't know if I'll continue it, we will see, depending on usefullness, demand and time.
+            </p>
+        </div>
+    </body>
+</html>
